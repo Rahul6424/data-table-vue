@@ -1,12 +1,12 @@
 {
-  "name": "test-header",
+  "name": "@rahul6424/test-header",
   "version": "0.1.0",
   "description": "Describes table",
   "author": {
     "name": "Rahul Gupta"
   },
   "license": "MIT",
-  "private": true,
+  "private": false,
   "files": [
     "dist"
   ],
