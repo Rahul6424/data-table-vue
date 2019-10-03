@@ -1,13 +1,23 @@
 {
   "name": "vue-data-table",
   "version": "0.1.0",
+  "description": "Describes table",
+  "author": {
+    "name": "Rahul Gupta"
+  },
+  "license": "MIT",
   "private": true,
   "repository": "https://github.com/Rahul6424/test.git",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name vue-data-table ./src/components/HelloWorld.vue",
     "lint": "vue-cli-service lint"
   },
+  "main": "dist/vue-data-table.umd.js",
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10"
