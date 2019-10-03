@@ -2,6 +2,7 @@
   "name": "vue-data-table",
   "version": "0.1.0",
   "private": true,
+  "repository": "https://github.com/Rahul6424/test.git",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
