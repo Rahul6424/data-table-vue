@@ -1,7 +1,22 @@
 {
-  "name": "@rahul6424/test-header",
-  "version": "0.1.0",
-  "description": "Describes table",
+  "name": "data-table-vue",
+  "version": "1.0.0",
+  "description": "A simple and smart data table for vue with search, sort, online & offline features without any dependency",
+  "homepage": "https://github.com/Rahul6424/data-table-vue",
+  "keywords": [
+    "vue",
+    "vue.js",
+    "DataTable",
+    "Data Table",
+    "data table vue",
+    "data table for vue",
+    "vue data table",
+    "Pagination",
+    "sortable table vue",
+    "searchable table vue",
+    "live search table vue",
+    "live pagination table vue"
+  ],
   "author": {
     "name": "Rahul Gupta"
   },
@@ -13,13 +28,15 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name vue-data-table ./src/components/HelloWorld.vue",
+    "build-bundle": "vue-cli-service build --target lib --name data-table-vue ./src/components/table.vue",
     "lint": "vue-cli-service lint"
   },
-  "main": "dist/vue-data-table.umd.js",
+  "main": "dist/data-table-vue.umd.js",
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "materialize-css": "^1.0.0-rc.2",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
@@ -27,8 +44,7 @@
     "@vue/cli-service": "^3.11.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "eslint-plugin-vue": "^5.0.0"
   },
   "eslintConfig": {
     "root": true,
