@@ -1,6 +1,6 @@
 # data-table-vue
 
-This vue data table provides you freedom of customizing anything and everything of your choice.
+This materialize vue data table provides you freedom of customizing anything and everything of your choice.
 This data table for vue js is made of plain html5 and plain css without any dependency and gives you flexibility to configure with very minimal yet powerful options
 
 
@@ -101,8 +101,31 @@ Each Object must contain 'key' -> This is use to fetch the value from overall js
 
 <img src="https://drive.google.com/uc?id=17tPGRpEVncgZycVq09Dwi_Q14sloHE-j" alt="screenshot" />
 
+## include Materialize 
 
+If your application is not using materialize then you have to include materialize in your application.
+Add materialize js into your index html like below:
 
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+```
+
+Add materialize css
+1. If you want to apply materialize css to specific component then add below line into your component's style
+
+ ```
+  <style scoped>
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css");
+  </style>
+```
+2. If you want to apply msterialize css for your entire application then add below line into your index.html
+
+```
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+```
+
+     
 
 ## How to include data-table-vue in vue file? (Sample Code)
 ```
@@ -141,6 +164,7 @@ Each Object must contain 'key' -> This is use to fetch the value from overall js
 </template>
 <script>
 import Table from "data-table-vue";
+
 export default {
   components: { Table },
   data() {
@@ -180,6 +204,7 @@ export default {
       currentSort = "id",
       currentSortDir = "asc",
       searchText,
+      defaultSearchColumns,
       hideLoading,
       cb
     ) {
@@ -194,7 +219,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css");
 </style>
 
 ```

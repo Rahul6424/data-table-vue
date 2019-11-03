@@ -1,7 +1,7 @@
 {
   "name": "data-table-vue",
-  "version": "1.0.0",
-  "description": "A simple and smart data table for vue with search, sort, online & offline features without any dependency",
+  "version": "1.0.9",
+  "description": "A simple and smart materialize data table for vue with search, sort, online & offline features without any dependency",
   "homepage": "https://github.com/Rahul6424/data-table-vue",
   "keywords": [
     "vue",
@@ -34,7 +34,6 @@
   "main": "dist/data-table-vue.umd.js",
   "dependencies": {
     "core-js": "^2.6.5",
-    "materialize-css": "^1.0.0-rc.2",
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
   },
