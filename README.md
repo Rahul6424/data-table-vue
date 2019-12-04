@@ -75,6 +75,16 @@ Each Object must contain 'key' -> This is use to fetch the value from overall js
 <td>This flag is useful to hide and show the number of searchable columns as notification. Default: false, if you want to show the notification option, then pass it as true</td>
 </tr>
 <tr>
+<td>'searchByFilterName'</td>
+<td>String</td>
+<td>Name within the search by button</td>
+</tr>
+<tr>
+<td>'columnFilterName'</td>
+<td>String</td>
+<td>Name within the 'view by' button</td>
+</tr>
+<tr>
 <td>'tableTitle'</td>
 <td>String (Optional)</td>
 <td>Title of the table</td>
