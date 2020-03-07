@@ -25,6 +25,7 @@ Each Object must contain 'key' -> This is use to fetch the value from overall js
                 For example: if you have provide {key:id}, then data-table-vue will loop all the values and try to find the 'id' in each of the object to display under each row.<br>
                 Each Object must contain 'sortable' -> Boolean (If true then that column will be allowed as           sortable otherwise not)<br>
                  Optional - 'filterable' -> Boolean (If true then that column will be allowed as           filtering option otherwise not, by default it is true)<br>
+                  Optional - 'type' -> String (If 'html' - then that column will render html content, by default it is normal text display)<br>
                 Optional -  'sortkey' -> String - This is useful when you are using any inner key value in key. For eg: status.key in this case the actual column value is status_id which is foreign key but you want to display as status.name, wherein at the time of sorting you may need exact column key instead of foreign key, so provide this value as 'status_id'</td>
 </tr>
 <tr>
