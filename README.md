@@ -1599,7 +1599,7 @@ export default {
 
 <br>
 
-**<h2 id="add_custom_buttons_right_attributes">1. Add custom buttons on right side</h2>**
+**<h2 id="add_custom_buttons_right_attributes">2. Add custom buttons on right side</h2>**
 
 > Pass your html code inside the `data-table-vue directive`.
 > Use slot name as `headerOptionsRight`.
