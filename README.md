@@ -1,6 +1,6 @@
 # data-table-vue
 
-> This materialize vue data table provides you freedom of customizing anything and everything of your choice.
+> This materialize vue data table provides you freedom of customizing anything and everything of your choice.<br>
 > This data table for vue js is made of plain html5 and plain css without any dependency and gives you flexibility to configure with very minimal yet powerful options
 
 ---
