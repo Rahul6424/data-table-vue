@@ -1,7 +1,7 @@
 # data-table-vue
 
-> This materialize vue data table provides you freedom of customizing anything and everything of your choice.<br>
-> This data table for vue js is made of plain html5 and plain css without any dependency and gives you flexibility to configure with very minimal yet powerful options
+> - This materialize vue data table provides you freedom of customizing anything and everything of your choice.
+> - This data table for vue js is made of plain html5 and plain css without any dependency and gives you flexibility to configure with very minimal yet powerful options
 
 ---
 
@@ -52,8 +52,8 @@
 
 #### **Install**
 
-> To install the data-table-vue and saving it to package.json dependency
-> Open your favorite Terminal and run below command.
+> - To install the data-table-vue and saving it to package.json dependency
+> - Open your favorite Terminal and run below command.
 
 ```
 npm i data-table-vue --save
@@ -63,8 +63,8 @@ npm i data-table-vue --save
 
 #### **Include Materialize CDN**
 
-> If your application is `not already using` materialize then you have to include materialize in your application.
-> Add materialize js into your **index html** like below:
+> - If your application is `not already using` materialize then you have to include materialize in your application.
+> - Add materialize js into your **index html** like below:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -74,8 +74,8 @@ npm i data-table-vue --save
 
 #### **Include JQuery CDN**
 
-> If your application is `not already using` jquery then you have to include jquery in your application.
-> Add JQuery CDN into your **index html** like below:
+> - If your application is `not already using` jquery then you have to include jquery in your application.
+> - Add JQuery CDN into your **index html** like below:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -101,14 +101,14 @@ npm i data-table-vue --save
 
 # **<h1 id="how_to">How to include data-table-vue</h1>**
 
-> Let's imagine you have `App.vue` file where you want to include data-table-vue
-> We will start with `basic setup` and slowly we will cover all the features one by one
+> - Let's imagine you have `App.vue` file where you want to include data-table-vue
+> - We will start with `basic setup` and slowly we will cover all the features one by one
 
 #### **<h4 id="basic_table">Script Section </h4>**
 
-> Let's create basic table with 6 fields.
-> `ID` | `NAME` | `ADDRESS 1` | `ADDRESS 2` | `Mobile No` | `Landline`
-> Here is the **attributes/properties** required to configure basic table
+> - Let's create basic table with 6 fields.
+> - `ID` | `NAME` | `ADDRESS 1` | `ADDRESS 2` | `Mobile No` | `Landline`
+> - Here is the **attributes/properties** required to configure basic table
 
 | Attributes         | Data Type        | Mandatory | Purpose                                                                                                                                                                                       |
 | ------------------ | ---------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -230,8 +230,8 @@ export default {
 
 #### **<h4 id="table_title">How to add table's title</h4>**
 
-> Just add [tableTitle](#table_title_attributes) props
-> `Sample code` is shown below
+> - Just add [tableTitle](#table_title_attributes) props
+> - `Sample code` is shown below
 
 ```html
 <template>
@@ -409,8 +409,8 @@ export default {
 
 #### **<h4 id="action_move_left">Move Action/Edit column towards left</h4>**
 
-> Just add [fixedActionColumnOnLeft](#fixed_action_column_on_left_attributes) props
-> `Sample code` is shown below
+> - Just add [fixedActionColumnOnLeft](#fixed_action_column_on_left_attributes) props
+> - `Sample code` is shown below
 
 ```html
 <template>
@@ -503,9 +503,9 @@ export default {
 
 #### **<h4 id="global_search">Global Search Box</h4>**
 
-> Just remove [hideSearchBox](#hide_search_box_attributes) props or simply make its value to `false`
-> Also add [defaultSearchColumns](#default_search_columns_attributes) props.
-> `Sample code` is shown below where we are making `Global Search` upon two columns i.e. `id` & `name`
+> - Just remove [hideSearchBox](#hide_search_box_attributes) props or simply make its value to `false`
+> - Also add [defaultSearchColumns](#default_search_columns_attributes) props.
+> - `Sample code` is shown below where we are making `Global Search` upon two columns i.e. `id` & `name`
 
 ```html
 <template>
@@ -551,10 +551,10 @@ export default {
 
 #### **<h4 id="global_search_custom">Global Search Box on user selected columns</h4>**
 
-> Add [showSearchFilter](#show_search_filter_attributes) props.
-> (Optional) You can also choose the `Title` of [searchByFilterName](#search_by_filter_name_attributes) popup.
-> (Optional) You can also choose the `Notification Count` of [showSearchFilterNotification](#show_search_filter_notification_attributes).
-> `Sample code` is shown below where `Global Search` will be activated on default columns i.e. `id` & `name` but there will be an extra option provided where user can select on which all columns `Global Search` should work from UI.
+> - Add [showSearchFilter](#show_search_filter_attributes) props.
+> - (Optional) You can also choose the `Title` of [searchByFilterName](#search_by_filter_name_attributes) popup.
+> - (Optional) You can also choose the `Notification Count` of [showSearchFilterNotification](#show_search_filter_notification_attributes).
+> - `Sample code` is shown below where `Global Search` will be activated on default columns i.e. `id` & `name` but there will be an extra option provided where user can select on which all columns `Global Search` should work from UI.
 
 ```html
 <template>
@@ -603,10 +603,10 @@ export default {
 
 #### **<h4 id="show_hide">Show/Hide Columns</h4>**
 
-> Add [showColumnFilter](#show_column_filter_attributes) props.
-> (Optional) You can also choose the `Title` of [columnFilterName](#column_filter_name_attributes) popup.
-> (Optional) You can also choose the `Notification Count` of [showColumnFilterNotification](#show_column_filter_notification_attributes).
-> `Sample code` is shown below.
+> - Add [showColumnFilter](#show_column_filter_attributes) props.
+> - (Optional) You can also choose the `Title` of [columnFilterName](#column_filter_name_attributes) popup.
+> - (Optional) You can also choose the `Notification Count` of [showColumnFilterNotification](#show_column_filter_notification_attributes).
+> - `Sample code` is shown below.
 
 ```html
 <template>
@@ -658,8 +658,8 @@ export default {
 
 #### **<h4 id="export">Export as CSV</h4>**
 
-> Add [exportExcel](#export_excel_attributes) props.
-> `Sample code` is shown below.
+> - Add [exportExcel](#export_excel_attributes) props.
+> - `Sample code` is shown below.
 
 ```html
 <template>
@@ -712,8 +712,8 @@ export default {
 
 #### **<h4 id="rearrange">Rearrange Columns by drag & drop</h4>**
 
-> Add [moveableColumn](#moveable_column_attributes) props.
-> `Sample code` is shown below.
+> - Add [moveableColumn](#moveable_column_attributes) props.
+> - `Sample code` is shown below.
 
 ```html
 <template>
@@ -767,9 +767,9 @@ export default {
 
 #### **<h4 id="filter_single">Filter option for individual column</h4>**
 
-> Add [showColumnFilterButton](#show_column_filter_button_attributes) props.
-> Add `multiFilterOption` property on [fields](#fields_attributes) on those columns where you want to filter.
-> `Sample code` is shown below, where we are making filterable columns as `ADDRESS 1` & `ADDRESS 2`.
+> - Add [showColumnFilterButton](#show_column_filter_button_attributes) props.
+> - Add `multiFilterOption` property on [fields](#fields_attributes) on those columns where you want to filter.
+> - `Sample code` is shown below, where we are making filterable columns as `ADDRESS 1` & `ADDRESS 2`.
 
 ```html
 <template>
@@ -912,10 +912,10 @@ export default {
 
 #### **<h4 id="pinned">Fixed/Pin Columns on left (non-scrollable)</h4>**
 
-> Add [showLockColumnsButton](#show_lock_columns_button_attributes) props.
-> Add `lockable` property in [fields](#fields_attributes) on those columns where you want to lock.
-> Add `lock` property in [fields](#fields_attributes) on those columns where `lockable` is true. This is mandatory when `lockable` is true.
-> `Sample code` is shown below, where we are making lockable columns as `id` & `name`, in which `id` column is `locked` by default whereas `name` column doesn't.
+> - Add [showLockColumnsButton](#show_lock_columns_button_attributes) props.
+> - Add `lockable` property in [fields](#fields_attributes) on those columns where you want to lock.
+> - Add `lock` property in [fields](#fields_attributes) on those columns where `lockable` is true. This is mandatory when `lockable` is true.
+> - `Sample code` is shown below, where we are making lockable columns as `id` & `name`, in which `id` column is `locked` by default whereas `name` column doesn't.
 
 ```html
 <template>
@@ -1063,8 +1063,8 @@ export default {
 
 #### **<h4 id="memorize">Memorize locally - all changes Ex: Filtered, Rearraged columns, default number of items / page etc.</h4>**
 
-> Add [memorizeSettingsLocally](#memorize_settings_locally_attributes) props.
-> `Sample code` is shown below.
+> - Add [memorizeSettingsLocally](#memorize_settings_locally_attributes) props.
+> - `Sample code` is shown below.
 
 ```html
 <template>
@@ -1121,8 +1121,8 @@ export default {
 
 #### **<h4 id="sortable_all">Sortable option on columns</h4>**
 
-> Add `sortable` property in [fields](#fields_attributes) on those columns which you want it to be sortable.
-> `Sample code` is shown below, where we are making sortable columns as `ID`, `NAME`, `ADDRESS 1` & `ADDRESS 2`.
+> - Add `sortable` property in [fields](#fields_attributes) on those columns which you want it to be sortable.
+> - `Sample code` is shown below, where we are making sortable columns as `ID`, `NAME`, `ADDRESS 1` & `ADDRESS 2`.
 
 ```html
 <template>
@@ -1276,15 +1276,15 @@ export default {
 
 **<h2 id="table_unique_id_attributes">tableUniqueId: String</h2>**
 
-> Must be passed as props
-> Value should be unique identifier between multiple `data-table-vue` and must not contain any `space` or `hyphen(-)`
+> - Must be passed as props
+> - Value should be unique identifier between multiple `data-table-vue` and must not contain any `space` or `hyphen(-)`
 
 <br>
 
 **<h2 id="table_title_attributes">tableTitle: String</h2>**
 
-> This property will start displaying the `Table Title` on top left corner.
-> `Don't` pass this property if you don't need table title.
+> - This property will start displaying the `Table Title` on top left corner.
+> - `Don't` pass this property if you don't need table title.
 
 <br>
 
@@ -1299,9 +1299,9 @@ export default {
 
 **<h2 id="per_page_options_attributes">perPageOptions: Array of Number(s)</h2>**
 
-> Must be passed as props
-> This will generate a dropdown for selecting items per page at the bottom right of the table for pagination
-> First element will be selected as `default`
+> - Must be passed as props
+> - This will generate a dropdown for selecting items per page at the bottom right of the table for pagination
+> - First element will be selected as `default`
 
 <br>
 
@@ -1319,8 +1319,8 @@ export default {
 
 **<h2 id="fields_attributes">fields : Array of Objects</h2>**
 
-> This will generate the `Table Header`
-> Each object should contain appropriate keys mentioned below
+> - This will generate the `Table Header`
+> - Each object should contain appropriate keys mentioned below
 
 | Properties        | Data Type | Mandatory | Purpose                                                                                                                                                                                                                                  |
 | ----------------- | --------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1377,8 +1377,8 @@ export default {
 
 **<h2 id="default_sort_attributes">defaultSort: String</h2>**
 
-> Must be passed as props
-> Value should match one of the [fields'](#fields_attributes) key
+> - Must be passed as props
+> - Value should match one of the [fields'](#fields_attributes) key
 
 <br>
 
@@ -1406,10 +1406,10 @@ export default {
 
 **<h2 id="fixed_action_column_on_left_attributes">fixedActionColumnOnLeft: Boolean</h2>**
 
-> This prop is only valid if you have opted for [actions](#actions_attributes).
-> This prop will move **Action** column as `first column` of the table.
-> This also makes the **Action** column as fixed and non scrollable.
-> This prop is `not mandatory` > `By default`, the **Action** column will be displayed as the `last column` of the table.
+> - This prop is only valid if you have opted for [actions](#actions_attributes).
+> - This prop will move **Action** column as `first column` of the table.
+> - This also makes the **Action** column as fixed and non scrollable.
+> - This prop is `not mandatory` > `By default`, the **Action** column will be displayed as the `last column` of the table.
 
 | Value | Purpose                                                             |
 | ----- | ------------------------------------------------------------------- |
@@ -1420,9 +1420,9 @@ export default {
 
 **<h2 id="action_list_attributes">actionList : Array of Objects</h2>**
 
-> This prop is only valid if you have opted for [actions](#actions_attributes).
-> This will generate the `Action Button(s)` for each row.
-> Each object should contain appropriate keys mentioned below
+> - This prop is only valid if you have opted for [actions](#actions_attributes).
+> - This will generate the `Action Button(s)` for each row.
+> - Each object should contain appropriate keys mentioned below
 
 | Properties | Data Type | Mandatory | Possible Options | Purpose                                                                                                                                                                                                                                                                                                                                |
 | ---------- | --------- | --------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1434,75 +1434,75 @@ export default {
 
 **<h2 id="default_search_columns_attributes">defaultSearchColumns: Array of Strings</h2>**
 
-> This will allow `Global Search` box to search on specified columns only.
-> This will only work when [hideSearchBox](#hide_search_box_attributes) is `false` or [hideSearchBox](#hide_search_box_attributes) is not passed.
-> Array must contain String elements and each element should match one of [fields'](#fields_attributes) key.
+> - This will allow `Global Search` box to search on specified columns only.
+> - This will only work when [hideSearchBox](#hide_search_box_attributes) is `false` or [hideSearchBox](#hide_search_box_attributes) is not passed.
+> - Array must contain String elements and each element should match one of [fields'](#fields_attributes) key.
 
 <br>
 
 **<h2 id="show_search_filter_attributes">showSearchFilter: Boolean</h2>**
 
-> This will allow `Global Search` box to search on user selected columns.
-> By default the `Global Search` box will search based on [defaultSearchColumns](#default_search_columns_attributes).
-> This will only work when [hideSearchBox](#hide_search_box_attributes) is `false` or [hideSearchBox](#hide_search_box_attributes) is not passed.
+> - This will allow `Global Search` box to search on user selected columns.
+> - By default the `Global Search` box will search based on [defaultSearchColumns](#default_search_columns_attributes).
+> - This will only work when [hideSearchBox](#hide_search_box_attributes) is `false` or [hideSearchBox](#hide_search_box_attributes) is not passed.
 
 <br>
 
 **<h2 id="search_by_filter_name_attributes">searchByFilterName: String</h2>**
 
-> This will allow to change the title of `Search Filter` popup and this is Optional.
-> `By default` the title will be **"Search By"**.
-> This will only work when [showSearchFilter](#show_search_filter_attributes) is `true`.
-> This will only work when [hideSearchBox](#hide_search_box_attributes) is `false` or [hideSearchBox](#hide_search_box_attributes) is not passed.
+> - This will allow to change the title of `Search Filter` popup and this is Optional.
+> - `By default` the title will be **"Search By"**.
+> - This will only work when [showSearchFilter](#show_search_filter_attributes) is `true`.
+> - This will only work when [hideSearchBox](#hide_search_box_attributes) is `false` or [hideSearchBox](#hide_search_box_attributes) is not passed.
 
 <br>
 
 **<h2 id="show_search_filter_notification_attributes">showSearchFilterNotification: Boolean</h2>**
 
-> This will show `Count` of columns selected for search filter and this is Optional.
-> `By default` the notification will not be shown.
-> This will only work when [showSearchFilter](#show_search_filter_attributes) is `true`.
-> This will only work when [hideSearchBox](#hide_search_box_attributes) is `false` or [hideSearchBox](#hide_search_box_attributes) is not passed.
+> - This will show `Count` of columns selected for search filter and this is Optional.
+> - `By default` the notification will not be shown.
+> - This will only work when [showSearchFilter](#show_search_filter_attributes) is `true`.
+> - This will only work when [hideSearchBox](#hide_search_box_attributes) is `false` or [hideSearchBox](#hide_search_box_attributes) is not passed.
 
 <br>
 
 **<h2 id="fixed_search_box_text_attributes">fixedSearchBoxText: Boolean</h2>**
 
-> This will fix the default text of `Global Search Box`.
-> `By default` the text will be generated based on searchable columns.
-> This will only work when [showSearchFilter](#show_search_filter_attributes) is `true`.
-> This will only work when [hideSearchBox](#hide_search_box_attributes) is `false` or [hideSearchBox](#hide_search_box_attributes) is not passed.
+> - This will fix the default text of `Global Search Box`.
+> - `By default` the text will be generated based on searchable columns.
+> - This will only work when [showSearchFilter](#show_search_filter_attributes) is `true`.
+> - This will only work when [hideSearchBox](#hide_search_box_attributes) is `false` or [hideSearchBox](#hide_search_box_attributes) is not passed.
 
 <br>
 
 **<h2 id="show_column_filter_attributes">showColumnFilter: Boolean</h2>**
 
-> This will allow user to `Show/Hide` selected columns.
-> By default all the columns are visible.
+> - This will allow user to `Show/Hide` selected columns.
+> - By default all the columns are visible.
 
 <br>
 
 **<h2 id="column_filter_name_attributes">columnFilterName: String</h2>**
 
-> This will allow to change the title of `Column Filter` popup and this is Optional.
-> `By default` the title will be **"View By"**.
-> This will only work when [showColumnFilter](#show_column_filter_attributes) is `true`.
+> - This will allow to change the title of `Column Filter` popup and this is Optional.
+> - `By default` the title will be **"View By"**.
+> - This will only work when [showColumnFilter](#show_column_filter_attributes) is `true`.
 
 <br>
 
 **<h2 id="show_column_filter_notification_attributes">showColumnFilterNotification: Boolean</h2>**
 
-> This will show `Count` of columns selected for search filter and this is Optional.
-> `By default` the notification will not be shown.
-> This will only work when [showColumnFilter](#show_column_filter_attributes) is `true`.
+> - This will show `Count` of columns selected for search filter and this is Optional.
+> - `By default` the notification will not be shown.
+> - This will only work when [showColumnFilter](#show_column_filter_attributes) is `true`.
 
 <br>
 
 **<h2 id="export_excel_attributes">exportExcel: Boolean</h2>**
 
-> This option will provide a `download` button option on top right.
-> Upon clicking on button - there will be two options shown<br>1. `All Data` -> This will export all the rows without any filter<br>2. `Only Filtered` -> This will download only filtered rows
-> This will only work when [offLineMode](#offline_mode_attributes) is `true`.
+> - This option will provide a `download` button option on top right.
+> - Upon clicking on button - there will be two options shown<br>1. `All Data` -> This will export all the rows without any filter<br>2. `Only Filtered` -> This will download only filtered rows
+> - This will only work when [offLineMode](#offline_mode_attributes) is `true`.
 
 <br>
 
@@ -1514,28 +1514,31 @@ export default {
 
 **<h2 id="show_column_filter_button_attributes">showColumnFilterButton: Boolean</h2>**
 
-> This option will allow user to filter on individual columns.
-> This option will provide a `Filter` button option on top right.
-> Upon clicking on this button will toggle `column filter options` on each column header.
-> This will work on only those columns (Object) of [fields](#fields_attributes) which contains `multiFilterOption` as true.
+> - This option will allow user to filter on individual columns.
+> - This option will provide a `Filter` button option on top right.
+> - Upon clicking on this button will toggle `column filter options` on each column header.
+> - This will work on only those columns (Object) of [fields](#fields_attributes) which contains `multiFilterOption` as true.
 
 <br>
 
 **<h2 id="show_lock_columns_button_attributes">showLockColumnsButton: Boolean</h2>**
 
-> This option will allow user to `lock/pin` individual columns.
-> This option will provide a `Lock` button option on top right.
-> Upon clicking on this button will toggle `column lock/pin options` on each column header.
-> This will work on only those columns (Object) of [fields](#fields_attributes) which contains `lockable` as true.
-> <br>
+> - This option will allow user to `lock/pin` individual columns.
+> - This option will provide a `Lock` button option on top right.
+> - Upon clicking on this button will toggle `column lock/pin options` on each column header.
+> - This will work on only those columns (Object) of [fields](#fields_attributes) which contains `lockable` as true.
+
+
+<br>
 
 **<h2 id="memorize_settings_locally_attributes">memorizeSettingsLocally: Boolean</h2>**
 
-> This option will automatically memorize all the user changes locally which will be applied when browser is refreshed or visited next time.
-> This option will also provide a `clear saved` button option on top right.
-> Upon clicking on this button will clear all the locally stored settings.
-> Button will be colored if something is stored locally, whereas it will be greyed when there is no data saved.
-> <br>
+> - This option will automatically memorize all the user changes locally which will be applied when browser is refreshed or visited next time.
+> - This option will also provide a `clear saved` button option on top right.
+> - Upon clicking on this button will clear all the locally stored settings.
+> - Button will be colored if something is stored locally, whereas it will be greyed when there is no data saved.
+
+<br>
 
 
 ---
@@ -1544,14 +1547,14 @@ export default {
 
 # **<h1 id="custom_buttons">Custom buttons on header</h1>**
 
-> data-table-vue provides the facility to add your own custom buttons on header section.
-> There are two slots where custom buttons can be placed<br>1. Left side on the header<br>2. Right side on the header.
+> - data-table-vue provides the facility to add your own custom buttons on header section.
+> - There are two slots where custom buttons can be placed<br>1. Left side on the header<br>2. Right side on the header.
 
 **<h2 id="add_custom_buttons_left_attributes">1. Add custom buttons on left side</h2>**
 
-> Pass your html code inside the `data-table-vue directive`.
-> Use slot name as `headerOptionsLeft`.
->`Sample code` is shown below
+> - Pass your html code inside the `data-table-vue directive`.
+> - Use slot name as `headerOptionsLeft`.
+> - `Sample code` is shown below
 
 #### **Template Section**
 
@@ -1601,9 +1604,9 @@ export default {
 
 **<h2 id="add_custom_buttons_right_attributes">2. Add custom buttons on right side</h2>**
 
-> Pass your html code inside the `data-table-vue directive`.
-> Use slot name as `headerOptionsRight`.
->`Sample code` is shown below
+> - Pass your html code inside the `data-table-vue directive`.
+> - Use slot name as `headerOptionsRight`.
+> - `Sample code` is shown below
 
 #### **Template Section**
 
