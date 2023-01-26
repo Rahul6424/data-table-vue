@@ -301,7 +301,7 @@ export default {
                    :noPagination="true"
                    tableTitle="Demo Table"
                    actions="true"
-                   :actionList="actionList"
+                   :actionList="tableComponentData.actionList"
                    >
                  </Table>
                </div>
@@ -434,7 +434,7 @@ export default {
                    :noPagination="true"
                    tableTitle="Demo Table"
                    actions="true"
-                   :actionList="actionList"
+                   :actionList="tableComponentData.actionList"
                    :fixedActionColumnOnLeft="true"
                    >
                  </Table>
@@ -480,7 +480,7 @@ export default {
                    :hideSearchBox="true"
                    tableTitle="Demo Table"
                    actions="true"
-                   :actionList="actionList"
+                   :actionList="tableComponentData.actionList"
                    :fixedActionColumnOnLeft="true"
                    >
                  </Table>
@@ -528,7 +528,7 @@ export default {
                    :hideSearchBox="false"
                    tableTitle="Demo Table"
                    actions="true"
-                   :actionList="actionList"
+                   :actionList="tableComponentData.actionList"
                    :defaultSearchColumns="['id', 'name']"
                    >
                  </Table>
@@ -577,7 +577,7 @@ export default {
                    :hideSearchBox="false"
                    tableTitle="Demo Table"
                    actions="true"
-                   :actionList="actionList"
+                   :actionList="tableComponentData.actionList"
                    :defaultSearchColumns="['id', 'name']"
                    :showSearchFilter="true"
                    searchByFilterName="This is Filter Title"
@@ -629,7 +629,7 @@ export default {
                    :hideSearchBox="false"
                    tableTitle="Demo Table"
                    actions="true"
-                   :actionList="actionList"
+                   :actionList="tableComponentData.actionList"
                    :defaultSearchColumns="['id', 'name']"
                    :showSearchFilter="true"
                    searchByFilterName="This is Filter Title"
@@ -682,7 +682,7 @@ export default {
                    :hideSearchBox="false"
                    tableTitle="Demo Table"
                    actions="true"
-                   :actionList="actionList"
+                   :actionList="tableComponentData.actionList"
                    :defaultSearchColumns="['id', 'name']"
                    :showSearchFilter="true"
                    searchByFilterName="This is Filter Title"
@@ -736,7 +736,7 @@ export default {
                    :hideSearchBox="false"
                    tableTitle="Demo Table"
                    actions="true"
-                   :actionList="actionList"
+                   :actionList="tableComponentData.actionList"
                    :defaultSearchColumns="['id', 'name']"
                    :showSearchFilter="true"
                    searchByFilterName="This is Filter Title"
@@ -792,7 +792,7 @@ export default {
                    :hideSearchBox="false"
                    tableTitle="Demo Table"
                    actions="true"
-                   :actionList="actionList"
+                   :actionList="tableComponentData.actionList"
                    :defaultSearchColumns="['id', 'name']"
                    :showSearchFilter="true"
                    searchByFilterName="This is Filter Title"
@@ -938,7 +938,7 @@ export default {
                    :hideSearchBox="false"
                    tableTitle="Demo Table"
                    actions="true"
-                   :actionList="actionList"
+                   :actionList="tableComponentData.actionList"
                    :defaultSearchColumns="['id', 'name']"
                    :showSearchFilter="true"
                    searchByFilterName="This is Filter Title"
@@ -1087,7 +1087,7 @@ export default {
                    :hideSearchBox="false"
                    tableTitle="Demo Table"
                    actions="true"
-                   :actionList="actionList"
+                   :actionList="tableComponentData.actionList"
                    :defaultSearchColumns="['id', 'name']"
                    :showSearchFilter="true"
                    searchByFilterName="This is Filter Title"
@@ -1145,7 +1145,7 @@ export default {
                    :hideSearchBox="false"
                    tableTitle="Demo Table"
                    actions="true"
-                   :actionList="actionList"
+                   :actionList="tableComponentData.actionList"
                    :defaultSearchColumns="['id', 'name']"
                    :showSearchFilter="true"
                    searchByFilterName="This is Filter Title"
@@ -1331,11 +1331,11 @@ export default {
 | lock              | Boolean   | No        | This property will make respective column `Locked/Pinned` by default.<br>This property is mandatory when `lockable` is true.<br>If you want to make column as `Locked/Pinned` by default then provide value as `true` otherwise `false`. |
 | defaultValue      | String    | No        | Incase if value is not available in the entries then this value will be used to display the content for specific column and row.                                                                                                         |
 | sortable          | Boolean   | No        | If true then respective column will be allowed as sortable otherwise not.                                                                                                                                                                |
-| sortkey           | String    | No        | If true then respective column will be allowed as sortable otherwise not.                                                                                                                                                                |
 | filterable        | Boolean   | No        | If true then respective column will be allowed as filterable otherwise not, by default it is true.                                                                                                                                       |
 | type              | String    | No        | If `'html'` - then respective column's data will be considered as `html content` and it will be rendered as html, `by default` it is `normal text` display.                                                                              |
 | sortkey           | String    | No        | This will be helpful when you want to display the content with other key whereas while `sorting` you want to sort `with different key`, then provide sorting key as value.                                                               |
-| filterkey         | String    | No        | This will be helpful when you want to display the content with other key whereas while `searching` you want to sort `with different key`, then provide searching key as value.                                                           |
+| filterkey         | String    | No        | This will be helpful when you want to display the content with other key whereas while `searching` you want to sort `with different key`, then provide searching key as value.      
+| preProcess | Function    | No        | This function gives you freedom of customizing the display text, function will recieve two argumanets i.e. `respective value` &  `entire row`. This function should return the processed string.                                                      |
 
 <br>
 
@@ -1430,7 +1430,7 @@ export default {
 | refAddress | Function  | Yes       | NA               | The function should receive `argument` which will contain single row data.<br>1. Incase of `link` type -> this should `return` URL which will be placed in `<a href="">` <br>2. Incase of `cb`, you can write any custom code inside function as per your need.                                                                        |
 | getIcon    | Function  | Yes       | NA               | Function should receive `argument` which will contain single row data and it should return <br> 1. If `html` property mentioned below is 'true' then return html content which will render as icon.<br>2. If `html` property mentioned below is 'false' then return any [Materialize Icon Name](https://materializecss.com/icons.html) |
 | html       | String    | Yes       | true,false       | You can customize your icon with this property. If value is `true` then `getIcon` should return html content or else should return any [Materialize Icon Name](https://materializecss.com/icons.html)                                                                                                                                  |
-| hoverTitle | String    | No        | ANY              | This text would be visible when user will hover on icon.                                                                                                                                                                                                                                                                               |
+| hoverTitle | String    | No        | ANY              | This text would be visible when user will hover on icon.                                                                                                                                                                                                                                                                               |                                                                                                                                                                 |
 
 **<h2 id="default_search_columns_attributes">defaultSearchColumns: Array of Strings</h2>**
 
@@ -1466,11 +1466,10 @@ export default {
 
 <br>
 
-**<h2 id="fixed_search_box_text_attributes">fixedSearchBoxText: Boolean</h2>**
+**<h2 id="fixed_search_box_text_attributes">fixedSearchBoxText: String</h2>**
 
 > - This will fix the default text of `Global Search Box`.
 > - `By default` the text will be generated based on searchable columns.
-> - This will only work when [showSearchFilter](#show_search_filter_attributes) is `true`.
 > - This will only work when [hideSearchBox](#hide_search_box_attributes) is `false` or [hideSearchBox](#hide_search_box_attributes) is not passed.
 
 <br>
@@ -1518,6 +1517,16 @@ export default {
 > - This option will provide a `Filter` button option on top right.
 > - Upon clicking on this button will toggle `column filter options` on each column header.
 > - This will work on only those columns (Object) of [fields](#fields_attributes) which contains `multiFilterOption` as true.
+> - You can also manage the [filter condition](#show_column_filter_condition_attributes).
+
+<br>
+
+**<h2 id="show_column_filter_condition_attributes">multiFilterCondition: String</h2>**
+
+> - This option will perform column filter with `AND` or `OR` conditions with other columns.
+> - The `default` value is `AND`
+> - Incase of `AND` : Only those rows will be considered which `matches all` the filter conditions given in any of the columns.
+> - Incase of `OR` : Only those rows will be considered which `matches any` of the filter coditions given in any of the columns.
 
 <br>
 
