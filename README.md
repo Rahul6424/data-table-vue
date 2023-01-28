@@ -1335,7 +1335,7 @@ export default {
 | type              | String    | No        | If `'html'` - then respective column's data will be considered as `html content` and it will be rendered as html, `by default` it is `normal text` display.                                                                              |
 | sortkey           | String    | No        | This will be helpful when you want to display the content with other key whereas while `sorting` you want to sort `with different key`, then provide sorting key as value.                                                               |
 | filterkey         | String    | No        | This will be helpful when you want to display the content with other key whereas while `searching` you want to sort `with different key`, then provide searching key as value.      
-| preProcess | Function    | No        | This function gives you freedom of customizing the display text, function will recieve two argumanets i.e. `respective value` &  `entire row`. This function should return the processed string.                                                      |
+| preProcess | Function    | No        | This function gives you freedom of customizing the display text, function will recieve two argumanets i.e. `respective value` &  `entire row`. This function should return the processed string. When using this, you can also change the `key's` value to any custom unique value and it is not mandatory to match with the keys of `entries`                                                    |
 
 <br>
 
@@ -1360,7 +1360,7 @@ export default {
 
 > - This is the first function which will be called when data-vue-table loads.
 > - This function will be called if [offLineMode](#offline_mode_attributes) is false or [offLineMode](#offline_mode_attributes) has not been passed
-> - Function must receive `start`,`recordsPerPage`,`currentSort`,`currentSortDir`,`searchText`,`defaultSearchColumns`,`hideLoading`,`callback` as arguments.
+> - Function must receive `start`, `recordsPerPage`, `currentSort`, `currentSortDir`, `searchText`, `defaultSearchColumns`, `hideLoading`, `callback` as arguments.
 > - In this function you can call your API to get the table data based on above `arguments`.
 > - This function will be called every time when user changes any property For Ex: Sorting, Searching, Pagination.
 > - To return list of rows/items for table, it must invoke callback function with object as parameter having following keys.
@@ -1527,6 +1527,15 @@ export default {
 > - The `default` value is `AND`
 > - Incase of `AND` : Only those rows will be considered which `matches all` the filter conditions given in any of the columns.
 > - Incase of `OR` : Only those rows will be considered which `matches any` of the filter coditions given in any of the columns.
+
+<br>
+
+**<h2 id="show_column_filter_count_attributes">showColumnFilterCount: Boolean</h2>**
+
+> - This props is used to show/hide column filter's option count, which will help you to know how many row matches are there with each of the options.
+> - The `default` value is `false`
+> - Incase of `false` : Count will not be shown for each option under each column filter.
+> - Incase of `true` : Count will be shown for each option under each column filter.
 
 <br>
 
