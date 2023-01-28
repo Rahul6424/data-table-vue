@@ -1335,7 +1335,7 @@ export default {
 | type              | String    | No        | If `'html'` - then respective column's data will be considered as `html content` and it will be rendered as html, `by default` it is `normal text` display.                                                                              |
 | sortkey           | String    | No        | This will be helpful when you want to display the content with other key whereas while `sorting` you want to sort `with different key`, then provide sorting key as value.                                                               |
 | filterkey         | String    | No        | This will be helpful when you want to display the content with other key whereas while `searching` you want to sort `with different key`, then provide searching key as value.      
-| preProcess | Function    | No        | This function gives you freedom of customizing the display text, function will recieve two argumanets i.e. `respective value` &  `entire row`. This function should return the processed string. When using this, you can also change the `key's` value to any custom unique value and it is not mandatory to match with the keys of `entries`                                                    |
+| preProcess | Function    | No        | This function gives you freedom of customizing the display text, function will recieve two argumanets i.e. `respective value` &  `entire row`. This function should return the processed string.<br>When using this, you can also change the `key's` value to any custom unique value and it is not mandatory to match with the keys of `entries`                                                    |
 
 <br>
 
@@ -1555,6 +1555,13 @@ export default {
 > - This option will also provide a `clear saved` button option on top right.
 > - Upon clicking on this button will clear all the locally stored settings.
 > - Button will be colored if something is stored locally, whereas it will be greyed when there is no data saved.
+
+<br>
+
+**<h2 id="defaul_value_attributes">defaulValue: String</h2>**
+
+> - This props is use to set the default text for any value which is blank.
+> - This can be overridden with field level `defaulValue`.
 
 <br>
 
