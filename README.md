@@ -1558,10 +1558,36 @@ export default {
 
 <br>
 
-**<h2 id="defaul_value_attributes">defaulValue: String</h2>**
+**<h2 id="default_value_attributes">defaultValue: String</h2>**
 
 > - This props is use to set the default text for any value which is blank.
-> - This can be overridden with field level `defaulValue`.
+> - This can be overridden with field level `defaultValue`.
+
+<br>
+
+
+**<h2 id="button_theme_color_attributes">buttonThemeColor: String</h2>**
+
+> - This props is use to set the default color for any button or notifications.
+> - The default value is `red`.
+> - You can choose any main Color Palette from [Materialize Color Palette](https://materializecss.com/color.html).
+> - Examples of main color palettes are : `red`, `pink`, `deep-purple`, `teal` etc.
+> - You can also customize the color scheme by creating two global css classes i.e. `your-custom-class-name` & `your-custom-class-name`-text.<br>For Example: If you have a custom color code then choose some css class name of your choice, let's say **comp-theme**, then create two css classes with name: **comp-theme** & **comp-theme-text**.<br>And pass `buttonThemeColor` value as **comp-theme**
+> - `Sample code` is shown below
+
+<br>
+
+```html
+
+.comp-theme {
+  background: #d50000 !important;
+}
+
+.comp-theme-text {
+  color: #d50000
+}
+
+```
 
 <br>
 
