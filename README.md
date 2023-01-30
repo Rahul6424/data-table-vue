@@ -1297,11 +1297,79 @@ export default {
 
 <br>
 
-**<h2 id="per_page_options_attributes">perPageOptions: Array of Number(s)</h2>**
+**<h2 id="per_page_options_attributes">perPageOptions: Array of Object(s) | Number(s)</h2>**
 
 > - Must be passed as props
-> - This will generate a dropdown for selecting items per page at the bottom right of the table for pagination
-> - First element will be selected as `default`
+> - This will generate a dropdown for selecting items per page at the bottom right of the table for pagination.
+> - First element will be selected as `default` if your array contains numbers as element.
+> - Below are the examples to use this props
+
+### Example 1
+> - This example is to show, how you can pass only `numbers` as pagination option.
+> - In this case the default per page option will be 5 (first element).
+
+```
+perPageOptions: [5, 10, 15, 30, 50] 
+```
+
+<br>
+
+### Example 2
+> - This example is to show, how you can pass only `objects` as pagination option.
+> - In this case you can select your own default selected option by providing `defaultSelected` as `true` in any one of the object.
+> - If `defaultSelected` is not provided in any of the object then the first object will be considered as default per page option.
+
+```
+perPageOptions: [
+        {
+          displayText: 3,
+          value: 3
+        }, {
+          displayText: 5,
+          value: 5
+        }, {
+          displayText: 10,
+          value: 10,
+          defaultSelected: true
+        }, {
+          displayText: 15,
+          value: 15
+        }, {
+          displayText: 20,
+          value: 20
+        }, {
+          displayText: 30,
+          value: 30
+        }];
+```
+
+<br>
+
+### Example 3
+> - This example is to show, how you can pass mixed options as `object` & `number` as pagination option.
+> - In this case you can select your own default selected option by providing `defaultSelected` as `true` in any one of the object.
+> - If `defaultSelected` is not provided in any of the object then the first object will be considered as default per page option.
+
+```
+perPageOptions: [
+        3, 5, {
+          displayText: 10,
+          value: 10,
+          defaultSelected: true
+        }, {
+          displayText: 15,
+          value: 15
+        }, 20, {
+          displayText: 30,
+          value: 30
+        }];
+```
+
+<br>
+
+**<h2 id="all_per_page_options_attributes">addAllOptionInPagination: Array of Number(s)</h2>**
+
+> - This will add a new option `All` as the last option of [perPageOptions](#per_page_options_attributes)
 
 <br>
 
@@ -1584,7 +1652,7 @@ export default {
 }
 
 .comp-theme-text {
-  color: #d50000
+  color: #d50000 !important;
 }
 
 ```
