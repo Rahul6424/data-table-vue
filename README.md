@@ -1312,8 +1312,6 @@ export default {
 perPageOptions: [5, 10, 15, 30, 50] 
 ```
 
-<br>
-
 ### Example 2
 > - This example is to show, how you can pass only `objects` as pagination option.
 > - In this case you can select your own default selected option by providing `defaultSelected` as `true` in any one of the object.
@@ -1343,8 +1341,6 @@ perPageOptions: [
         }];
 ```
 
-<br>
-
 ### Example 3
 > - This example is to show, how you can pass mixed options as `object` & `number` as pagination option.
 > - In this case you can select your own default selected option by providing `defaultSelected` as `true` in any one of the object.
@@ -1367,9 +1363,10 @@ perPageOptions: [
 
 <br>
 
-**<h2 id="all_per_page_options_attributes">addAllOptionInPagination: Array of Number(s)</h2>**
+**<h2 id="all_per_page_options_attributes">addAllOptionInPagination: Boolean</h2>**
 
-> - This will add a new option `All` as the last option of [perPageOptions](#per_page_options_attributes)
+> - If the value is `true` then this will add a new option `All` as the last option of [perPageOptions](#per_page_options_attributes).
+> - By default the value is `false`
 
 <br>
 
