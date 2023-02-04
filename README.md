@@ -1,7 +1,9 @@
-# data-table-vue
+# data-table-vue-v3
 
 > - This materialize vue data table provides you freedom of customizing anything and everything of your choice.
 > - This data table for vue js is made of plain html5 and plain css without any dependency and gives you flexibility to configure with very minimal yet powerful options
+> - This data table is compatible with Vue 3.
+> - Vue 2 compatible of this version can be found at [data-table-vue](https://www.npmjs.com/package/data-table-vue) 
 
 ---
 
@@ -56,7 +58,7 @@
 > - Open your favorite Terminal and run below command.
 
 ```
-npm i data-table-vue --save
+npm i data-table-vue-v3 --save
 ```
 
 <br>
@@ -122,7 +124,7 @@ npm i data-table-vue --save
 
 ```html
 <script>
-import Table from "data-table-vue"; // import data-table-vue
+import Table from "data-table-vue-v3"; // import data-table-vue-v3
 export default {
  components: { Table }, // declare it as component
  data() {
@@ -319,7 +321,7 @@ export default {
 
 ```html
 <script>
-import Table from "data-table-vue"; // import data-table-vue
+import Table from "data-table-vue-v3"; // import data-table-vue-v3
 export default {
  components: { Table }, // declare it as component
  data() {
@@ -820,7 +822,7 @@ export default {
 
 ```html
 <script>
-import Table from "data-table-vue"; // import data-table-vue
+import Table from "data-table-vue-v3"; // import data-table-vue-v3
 export default {
  components: { Table }, // declare it as component
  data() {
@@ -967,7 +969,7 @@ export default {
 
 ```html
 <script>
-import Table from "data-table-vue"; // import data-table-vue
+import Table from "data-table-vue-v3"; // import data-table-vue-v3
 export default {
  components: { Table }, // declare it as component
  data() {
@@ -1174,7 +1176,7 @@ export default {
 
 ```html
 <script>
-import Table from "data-table-vue"; // import data-table-vue
+import Table from "data-table-vue-v3"; // import data-table-vue-v3
 export default {
  components: { Table }, // declare it as component
  data() {
