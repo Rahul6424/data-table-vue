@@ -2,6 +2,8 @@
 
 > - This materialize vue data table provides you freedom of customizing anything and everything of your choice.
 > - This data table for vue js is made of plain html5 and plain css without any dependency and gives you flexibility to configure with very minimal yet powerful options
+> - This data table is compatible with Vue 2.
+> - Vue 3 compatible of this version can be found at [data-table-vue-v3](https://www.npmjs.com/package/data-table-vue-v3) 
 
 ---
 
@@ -1400,7 +1402,9 @@ perPageOptions: [
 | type              | String    | No        | If `'html'` - then respective column's data will be considered as `html content` and it will be rendered as html, `by default` it is `normal text` display.                                                                              |
 | sortkey           | String    | No        | This will be helpful when you want to display the content with other key whereas while `sorting` you want to sort `with different key`, then provide sorting key as value.                                                               |
 | filterkey         | String    | No        | This will be helpful when you want to display the content with other key whereas while `searching` you want to sort `with different key`, then provide searching key as value.      
-| preProcess | Function    | No        | This function gives you freedom of customizing the display text, function will recieve two argumanets i.e. `respective value` &  `entire row`. This function should return the processed string.<br>When using this, you can also change the `key's` value to any custom unique value and it is not mandatory to match with the keys of `entries`                                                    |
+| downloadable          | Boolean   | No        | If false then respective column will not be included at the time of downloading CSV.    
+| preProcessDownload          | Function   | No        | This function will be executed for each column & row at the time of downloading CSV, function will recieve three arguments i.e. `respective value`, `entire row` & `original value` (value before preProcess function).<br> **This function must return value**. 
+| preProcess | Function    | No        | This function gives you freedom of customizing the display text, function will recieve two arguments i.e. `respective value` &  `entire row`.<br>This function can return one of the below:<br> - **Processed** content.<br> OR <br> - **HTML** content as String (when type == 'html').<br> OR <br>- **Array of Objects** (when you have clickable items like buttons and type == 'html'). Each Object should contain <br>1. **htmlContent** : String : Mandatory <br>2. **onClick** : Function : Optional : params  (value, row, content, index) <br><br>When using this, you can also change the `key's` value to any custom unique value and it is not mandatory to match with the keys of `entries`                                                     |
 
 <br>
 
