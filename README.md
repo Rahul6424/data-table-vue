@@ -1,8 +1,57 @@
-# data-table-vue-v3
+Data Table Vue: A Feature-Packed Vue 3 Data Table Component
+-----------------------------------------------------------
 
-> - This materialize vue data table provides you freedom of customizing anything and everything of your choice.
-> - This data table for vue js is made of plain html5 and plain css without any dependency and gives you flexibility to configure with very minimal yet powerful options
-> - This data table is compatible with Vue 3.
+Introducing Data Table Vue, a comprehensive and feature-rich data table component for Vue 3. It provides developers with a powerful and flexible tool for displaying and interacting with large datasets within their applications.
+
+Here's what makes Data Table Vue the perfect choice for your next project:
+
+### Offline and Online Functionality
+
+-   Work with your data seamlessly, whether online or offline.
+-   No internet connection? No problem! Data Table Vue allows you to access and manipulate your data even without an internet connection.
+
+### Global Search and Individual Column Filters
+
+-   Find specific data within the table quickly and easily.
+-   Utilize the global search bar to search across all data points or apply individual column filters for more targeted results.
+
+### Sorting and Direction Control
+
+-   Customize how your data is displayed for optimal organization and clarity.
+-   Sort data by any column in ascending or descending order, depending on your needs.
+
+### Show/Hide Columns, Export as CSV, and Custom Buttons
+
+-   Take control of your data table experience.
+-   Show or hide specific columns to focus on the information that matters most, export data as a CSV file for further analysis, and add custom buttons to perform specific actions.
+
+### Drag & Drop, Pin/Unpin, and Auto Save
+
+-   Enhance the user experience and streamline your workflow.
+-   Drag and drop columns to reorder them on the fly, pin important columns to keep them readily accessible, and automatically save customized table options for a consistent experience across sessions.
+
+### Pagination, Customizable Columns, and Item Per Page Options
+
+-   Adapt the data table to your specific needs and preferences.
+-   Utilize pagination to manage large datasets efficiently, customize the number of columns displayed, and adjust the number of items shown per page for optimal viewing.
+
+### Customizable Table Title, Actions Column, and Position
+
+-   Personalize the data table to match your application's branding and user interface.
+-   Set a custom title for your table, add an actions column for performing quick operations on data points, and choose the position of the actions column (first or last) for optimal usability.
+
+Here are some additional features that make Data Table Vue stand out:
+
+-   Lightweight and efficient: Data Table Vue is designed to be lightweight and performant, ensuring smooth operation even with large datasets.
+-   Highly customizable: With extensive customization options, you can tailor the data table to your specific needs and preferences.
+-   Well-documented and easy to use: Data Table Vue comes with comprehensive documentation and examples to help you get started quickly and easily.
+-   Actively maintained: Data Table Vue is actively maintained and updated with new features and bug fixes.
+
+Let Data Table Vue empower your next project with its powerful features and intuitive interface.
+
+Get started today and experience the difference!
+
+
 > - Vue 2 compatible of this version can be found at [data-table-vue](https://www.npmjs.com/package/data-table-vue) 
 
 ---
